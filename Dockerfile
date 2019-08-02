@@ -26,8 +26,6 @@ RUN apt-get update \
 # Install Ansible via pip.
 RUN pip install $pip_packages
 
-COPY initctl_faker .
-RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
 
 # Install Ansible inventory file.
 RUN mkdir -p /etc/ansible

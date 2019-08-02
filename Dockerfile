@@ -41,4 +41,4 @@ ENV ANSIBLE_LIBRARY /ansible/library
  
 WORKDIR /ansible/playbooks
 VOLUME ["/sys/fs/cgroup"]
-CMD ["bash"]
+CMD ["/lib/systemd/systemd"]

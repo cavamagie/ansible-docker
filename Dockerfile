@@ -51,6 +51,6 @@ RUN groupadd -g ${ansible_gid} ${ansible_group} \
 
 COPY ansible.cfg /etc/ansible/.
 USER ansible
-WORKDIR /ansible/playbooks
+WORKDIR /tmp
 #VOLUME ["/sys/fs/cgroup"]
 #CMD ["/lib/systemd/systemd"]

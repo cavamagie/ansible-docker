@@ -1,4 +1,4 @@
-FROM scratch
+FROM debian:stretch
 CMD ["bash"]
 ENV DEBIAN_FRONTEND noninteractive
 ENV ANSIBLE_GATHERING smart

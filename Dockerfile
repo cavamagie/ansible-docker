@@ -1,6 +1,7 @@
 FROM debian:stretch
 USER root
 CMD ["bash"]
+ENV ANSIBLE_HOME /home/ansible
 ENV DEBIAN_FRONTEND noninteractive
 ENV ANSIBLE_GATHERING smart
 ENV ANSIBLE_HOST_KEY_CHECKING false

@@ -35,6 +35,6 @@ RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
 
  
-WORKDIR /ansible/playbooks
+#WORKDIR /ansible/playbooks
 #VOLUME ["/sys/fs/cgroup"]
-CMD ["/lib/systemd/systemd"]
+#CMD ["/lib/systemd/systemd"]

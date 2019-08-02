@@ -1,6 +1,6 @@
 FROM scratch
-ADD rootfs.tar.xz /
-CMD ["bash"]
+
+
 
 ENV DEBIAN_FRONTEND noninteractive
 

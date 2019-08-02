@@ -1,4 +1,5 @@
 FROM debian:stretch
+USER root
 CMD ["bash"]
 ENV DEBIAN_FRONTEND noninteractive
 ENV ANSIBLE_GATHERING smart

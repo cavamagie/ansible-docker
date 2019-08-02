@@ -2,6 +2,7 @@ FROM debian:stretch
 USER root
 CMD ["bash"]
 ENV DEBIAN_FRONTEND noninteractive
+ENV ANSIBLE_HOME /home/ansible
 ENV ANSIBLE_GATHERING smart
 ENV ANSIBLE_HOST_KEY_CHECKING false
 ENV ANSIBLE_RETRY_FILES_ENABLED false

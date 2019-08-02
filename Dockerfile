@@ -29,12 +29,13 @@ RUN pip install $pip_packages
 
 # Install Ansible inventory file.
 RUN mkdir -p /etc/ansible
+RUN mkdir -p /.ansible/tmp
 RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
 
 
 
  
-#WORKDIR /ansible/playbooks
+WORKDIR /ansible/playbooks
 #VOLUME ["/sys/fs/cgroup"]
 #CMD ["/lib/systemd/systemd"]
